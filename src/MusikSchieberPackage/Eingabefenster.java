@@ -65,6 +65,10 @@ public class Eingabefenster
 	   
 	   AudioFiles.MP3Datei beginner = new AudioFiles.MP3Datei(datei);
 	   
+	   beginner.setAlbum("test123");
+	   beginner.setGenre("test1245");
+	   beginner.saveTag();
+	   
 	   /*
 	   Socket socket;
 	   

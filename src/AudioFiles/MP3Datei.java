@@ -2,26 +2,18 @@ package AudioFiles;
 
 import java.io.File;
 import java.io.IOException;
-
-
-
-
-
-
-
 import org.jaudiotagger.audio.AudioFileIO;
 import org.jaudiotagger.audio.exceptions.CannotReadException;
+import org.jaudiotagger.audio.exceptions.CannotWriteException;
 import org.jaudiotagger.audio.exceptions.InvalidAudioFrameException;
 import org.jaudiotagger.audio.exceptions.ReadOnlyFileException;
 import org.jaudiotagger.audio.mp3.MP3File;
+import org.jaudiotagger.tag.FieldDataInvalidException;
+import org.jaudiotagger.tag.FieldKey;
+import org.jaudiotagger.tag.KeyNotFoundException;
+import org.jaudiotagger.tag.Tag;
 import org.jaudiotagger.tag.TagException;
 import org.jaudiotagger.tag.id3.*;
-import org.jaudiotagger.tag.id3.AbstractID3v2Tag;
-import org.jaudiotagger.tag.id3.ID3v1Tag;
-import org.jaudiotagger.tag.id3.ID3v24Frames;
-
-import com.mpatric.mp3agic.ID3v24Tag;
-
 
 
 public class MP3Datei {
@@ -172,22 +164,19 @@ public class MP3Datei {
 	}
 	
 	
-	public void saveid3v2Tag(){
-		/*
+	public void saveTag(){
+		Tag tag = audioFile.getTag();
 		try {
-			mp4id3v2Tag.setField(Mp4FieldKey.ARTIST, this.artist);
-			mp4id3v2Tag.setField(Mp4FieldKey.ALBUM, this.album);
-			mp4id3v2Tag.setField(Mp4FieldKey.TITLE, this.title);
-			mp4id3v2Tag.setField(Mp4FieldKey.TRACK, this.tracknumber);
-			mp4id3v2Tag.deleteField(Mp4FieldKey.GENRE);
-			mp4id3v2Tag.setField(Mp4FieldKey.GENRE_CUSTOM, this.genre);
-			mp4id3v2Tag.setField(Mp4FieldKey.DAY, this.year);
-			audioFile.setid3v2Tag(mp4id3v2Tag);
+			tag.setField(FieldKey.ARTIST, this.artist);
+			tag.setField(FieldKey.ALBUM, this.album);
+			tag.setField(FieldKey.TITLE, this.title);
+			tag.setField(FieldKey.TRACK, this.tracknumber);
+			tag.setField(FieldKey.YEAR, this.year);
+			tag.setField(FieldKey.GENRE, this.genre);
+			audioFile.setTag(tag);
 			audioFile.commit();
 		} catch (KeyNotFoundException | FieldDataInvalidException | CannotWriteException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		*/
 	}
 }
