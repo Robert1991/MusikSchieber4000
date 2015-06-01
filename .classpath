@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="lib" path="C:/Bibliotheken/JavaTagLib/jid3lib-0.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/jaudiotagger-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/jaudiotagger-2.2.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/jaudiotagger-2.2.3-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/myid3.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/myid3-src.zip"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/commons-logging-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/jakarta-regexp.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/mp3agic-0.8.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaTagLib/mp3agic-0.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/JavaMusicBrainz-0.2.zip"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MusicBraniz/lib/jena.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/musicbrainz.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/basicplayer3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/jl1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/jspeex0.9.7.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/mp3spi1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/MP3Player/BasicPlayer3.0/lib/vorbisspi1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/hsqldb-2.3.2/hsqldb/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/hsqldb-2.3.2/hsqldb/lib/sqltool.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/javax.json-1.0-b06.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/quick-json-1.0.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Bibliotheken/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
