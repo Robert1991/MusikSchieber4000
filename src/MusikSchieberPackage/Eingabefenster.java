@@ -42,6 +42,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import AudioFiles.MP4Datei;
+
 import com.json.parsers.JSONParser;
 import com.json.parsers.JsonParserFactory;
 
@@ -55,18 +57,14 @@ public class Eingabefenster
 	   
 	   //MusicBrainzQuery query = new MusicBrainzQuery("C:\\MusikTestOrdner\\Jay - Z - Lost One.mp3");
 	   
-	   File datei = new File("C:\\MusikTestOrdner\\01 Beginner - Das Boot.m4a");
+	   File datei = new File("C:\\MusikTestOrdner\\Compuphonic - Sunset (feat. Marques Toliver).mp3");
 	   File datei1 = new File("C:\\MusikTestOrdner\\09 Bescheid.m4a");
 	   File datei2 = new File("C:\\MusikTestOrdner\\08 3 Lil Puntos.m4a");
 	   PlayMP3 play = new PlayMP3();
 	   //play.open("C:\\MusikTestOrdner\\01 Beginner - Das Boot.m4a");
 	   
-	   MP4Datei beginner = new MP4Datei(datei);
-	   beginner = new MP4Datei(datei1);
-	   beginner = new MP4Datei(datei2);
+	   AudioFiles.MP3Datei beginner = new AudioFiles.MP3Datei(datei);
 	   
-	   beginner.setGenre("test");	
-	   beginner.saveTag();
 	   /*
 	   Socket socket;
 	   
