@@ -11,7 +11,7 @@ import org.farng.mp3.MP3File;
 
 import com.mpatric.mp3agic.*;
 
-public class MP3Datei implements MusicFile{
+public class MP3Datei{
 	
 	private Mp3File mp3datei;
 	private File datei;
@@ -27,7 +27,6 @@ public class MP3Datei implements MusicFile{
 	private final String[] GENRE_LIST = {"Blues","Classic Rock","Country","Dance","Disco","Funk","Grunge","Hip-Hop","Jazz","Metal","New Age","Oldies","Other","Pop","Rhtym and Blues","Rap","Reggae","Rock","Techno","Industrial","Alternative","Ska","Death Metal", "Pranks", "Soundtrack","Euro-Techno","Ambient","Trip-Hop","Vocal","Jazz & Funk","Fusion","Trance","Classical","Instrumental","Acid","House","Game","Sound Clip","Gospel","Noise","Alternative Rock","Bass","Soul","Punk","Space","Meditative","Instrumental Pop","Instrumental Rock","Ethnic","Gothic","Darkwave","Techno-Industrial","Electronic","Pop-Folk","Eurodance","Dream","Southern Rock","Comedy","Cult","Gangsta","Top 40","Christian Rap","Pop/Funk","Jungle","Native US", "Cabaret","New Wave", "Psychadelic", "Rave", "Showtunes", "Trailer", "Lo-Fi", "Tribal", "Acid Punk", "Acid Jazz", "Polka", "Retro", "Musical", "Rock&Roll", "Hard Rock"};
 	private final String NUMBERS = "0123456789"; 
 	private boolean damaged;
-	private boolean missingValues;
 	private boolean ID3v2;
 	private boolean duplicate = false;
 	private String duplicateFilepath = "";

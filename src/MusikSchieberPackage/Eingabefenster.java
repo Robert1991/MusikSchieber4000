@@ -56,27 +56,17 @@ public class Eingabefenster
 	   //MusicBrainzQuery query = new MusicBrainzQuery("C:\\MusikTestOrdner\\Jay - Z - Lost One.mp3");
 	   
 	   File datei = new File("C:\\MusikTestOrdner\\01 Beginner - Das Boot.m4a");
+	   File datei1 = new File("C:\\MusikTestOrdner\\09 Bescheid.m4a");
+	   File datei2 = new File("C:\\MusikTestOrdner\\08 3 Lil Puntos.m4a");
 	   PlayMP3 play = new PlayMP3();
-	   play.open("C:\\MusikTestOrdner\\01 Beginner - Das Boot.m4a");
+	   //play.open("C:\\MusikTestOrdner\\01 Beginner - Das Boot.m4a");
 	   
-	   AudioFile f;
-	try {
-		f = AudioFileIO.read(datei);
-		Mp4Tag mp4tag = (Mp4Tag)f.getTag(); 
-		System.out.println(mp4tag.getFirst(Mp4FieldKey.ARTIST));
-		System.out.println(mp4tag.getFirst(Mp4FieldKey.ALBUM));
-		System.out.println(mp4tag.getFirst(Mp4FieldKey.GENRE_CUSTOM));
-		mp4tag.setField(Mp4FieldKey.ARTIST, "test");
-		mp4tag.setField(Mp4FieldKey.ALBUM, "test2");
-		f.setTag(mp4tag);
-		AudioFileIO.write(f);
-	} catch (CannotReadException | IOException | TagException
-			| ReadOnlyFileException | InvalidAudioFrameException | CannotWriteException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	   	
+	   MP4Datei beginner = new MP4Datei(datei);
+	   beginner = new MP4Datei(datei1);
+	   beginner = new MP4Datei(datei2);
 	   
+	   beginner.setGenre("test");	
+	   beginner.saveTag();
 	   /*
 	   Socket socket;
 	   
