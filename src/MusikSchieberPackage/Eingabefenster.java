@@ -66,7 +66,8 @@ public class Eingabefenster
 		System.out.println(mp4tag.getFirst(Mp4FieldKey.ARTIST));
 		System.out.println(mp4tag.getFirst(Mp4FieldKey.ALBUM));
 		System.out.println(mp4tag.getFirst(Mp4FieldKey.GENRE_CUSTOM));
-		mp4tag.setField(Mp4FieldKey.ARTIST, "Robert");
+		mp4tag.setField(Mp4FieldKey.ARTIST, "test");
+		mp4tag.setField(Mp4FieldKey.ALBUM, "test2");
 		f.setTag(mp4tag);
 		AudioFileIO.write(f);
 	} catch (CannotReadException | IOException | TagException
